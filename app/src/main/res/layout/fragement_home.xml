@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    android:text="Home Fragment"
+    android:textSize="30sp"
+    android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWelcomeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:visibility="gone"/>
+        // THIS ELEMENT IS HIDDEN
+
+        <TextView
+            android:id="@+id/tvWelcomeMsgTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome + USER"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/tvMenuMsg"
+            android:layout_below="@id/tvWelcomeMsgTemp"
+            android:paddingTop="150dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please click on the icon in the top left of the screen or swipe from the left hand side of the screen towards the right"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <TextView
+            android:id="@+id/tvStartService"
+            android:layout_below="@id/tvMenuMsg"
+            android:paddingTop="150dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start App Service"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <Switch
+            android:id="@+id/toggleService"
+            android:layout_below="@+id/tvStartService"
+            android:track="@drawable/round_track"
+            android:thumb="@drawable/round_thumb"
+            android:padding="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:visibility="gone"/>
+        // THIS ELEMENT IS HIDDEN
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/textView2"
+        android:inputType="textPersonName"
+        android:visibility="gone"/>
+        // THIS ELEMENT IS HIDDEN
+
+        <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@id/etUsername"
+        android:visibility="gone"/>
+        // THIS ELEMENT IS HIDDEN
+
+        <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/textView3"
+        android:inputType="textPersonName"
+        android:visibility="gone"/>
+        // THIS ELEMENT IS HIDDEN
+
+    </RelativeLayout>
+</RelativeLayout>
